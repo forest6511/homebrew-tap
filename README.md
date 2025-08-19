@@ -6,8 +6,10 @@ This is a Homebrew tap for forest6511's tools.
 
 ```bash
 brew tap forest6511/tap
-brew install gdl
+brew install forest6511/tap/gdl
 ```
+
+**Note**: Use the full tap name `forest6511/tap/gdl` to avoid conflicts with the GNOME gdl package in homebrew/core.
 
 ## Available Formulas
 
