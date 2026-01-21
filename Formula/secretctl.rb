@@ -5,21 +5,21 @@
 class Secretctl < Formula
   desc "The simplest AI-ready secrets manager"
   homepage "https://github.com/forest6511/secretctl"
-  version "0.8.6"
+  version "0.8.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/forest6511/secretctl/releases/download/v0.8.6/secretctl_0.8.6_darwin_amd64.tar.gz"
-      sha256 "92e0d29bd68c21766891f649de12cd2132d0d972d1aefbc2e82dc0182ee53f9e"
+      url "https://github.com/forest6511/secretctl/releases/download/v0.8.7/secretctl_0.8.7_darwin_amd64.tar.gz"
+      sha256 "19f9edd98a28f356c4eb0c0de89009b4ed9c347afc9326b0b882b540ca83dc06"
 
       def install
         bin.install "secretctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/forest6511/secretctl/releases/download/v0.8.6/secretctl_0.8.6_darwin_arm64.tar.gz"
-      sha256 "461dd69a0d99485745d0b2a8d3d4d69362061057fd56895855d54fe634e494a2"
+      url "https://github.com/forest6511/secretctl/releases/download/v0.8.7/secretctl_0.8.7_darwin_arm64.tar.gz"
+      sha256 "e3c231d741311950157d6789d9442ecc02918ca067e773d8a1382d5db0b00161"
 
       def install
         bin.install "secretctl"
@@ -29,15 +29,15 @@ class Secretctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/forest6511/secretctl/releases/download/v0.8.6/secretctl_0.8.6_linux_amd64.tar.gz"
-      sha256 "55d60c47e68b74c217984eb3909770c1495e122c667eb6a8a1fc0250b323c18f"
+      url "https://github.com/forest6511/secretctl/releases/download/v0.8.7/secretctl_0.8.7_linux_amd64.tar.gz"
+      sha256 "96c300d8d62926f44faf56b2fa182571aa09fc2959e48fa70a80a874ad3d61df"
       def install
         bin.install "secretctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/forest6511/secretctl/releases/download/v0.8.6/secretctl_0.8.6_linux_arm64.tar.gz"
-      sha256 "48ff8b8b6b07e42645372828283925f182ea773a6265edd6bd36e5c77b264b12"
+      url "https://github.com/forest6511/secretctl/releases/download/v0.8.7/secretctl_0.8.7_linux_arm64.tar.gz"
+      sha256 "734dd87effe28758e6a7014b23199be71296abd377f7dc3748fb1d0f420ec3aa"
       def install
         bin.install "secretctl"
       end
